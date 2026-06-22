@@ -1,12 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        // 最初のメッセージを出力
         System.out.println("SEMonster!");
-        
-        // Monsterクラスのオブジェクトを生成（召喚）
-        Monster monster = new Monster();
-        
-        // モンスターの情報を出力
-        System.out.println(monster.toString());
+
+        // Playerオブジェクトの追加とメソッド呼び出し
+        Player player = new Player();
+        player.drawMonsters();
+        player.showDeck();
     }
 }
